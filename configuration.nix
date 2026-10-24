@@ -189,6 +189,9 @@
 # Install firefox.
   programs.firefox.enable = true;
 
+# 补齐动态链接库，允许系统直接运行 uv 下载的非 Nix 渠道二进制文件
+programs.nix-ld.enable = true;
+
 # List packages installed in system profile. To search, run:
 # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -213,9 +216,11 @@
     meld   
     perl
     podman
+    python3
     samba
     tilix
     trojan-go
+    uv
     v2ray
     v2raya
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
