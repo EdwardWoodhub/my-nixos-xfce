@@ -17,8 +17,8 @@
 
   # 4. 配置 LiveCD ISO 的镜像名称与标签
   # --- 修改这里：使用 lib.mkForce 解决名称冲突 ---
-  image.baseName = lib.mkForce "my-x11-nixos-vm";
-  isoImage.isoBaseName = lib.mkForce "my-x11-nixos-vm";
+  image.baseName = lib.mkForce "my-nixos-xfce-vm";
+  isoImage.isoBaseName = lib.mkForce "my-nixos-xfce-vm";
   isoImage.volumeID = lib.mkForce "NIXOS_X11";
 
 
