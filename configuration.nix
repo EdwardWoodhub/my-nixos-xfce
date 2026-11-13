@@ -217,6 +217,7 @@ programs.nix-ld.enable = true;
     kdePackages.konsole
     mate.pluma
     meld   
+    mesa
     perl
     podman
     python3
