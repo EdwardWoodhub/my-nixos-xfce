@@ -6,6 +6,13 @@
 
 转而使用 bootc
 
+# 基座
+
+[nixpkgs/nixos/modules/config/system-path.nix at master · NixOS/nixpkgs](https://github.com/NixOS/nixpkgs/blob/master/nixos/modules/config/system-path.nix)  这里写了：
+
+```
+environment.systemPackages = config.environment.corePackages ++ config.environment.defaultPackages;
+```
 
 
 # 构建产物
