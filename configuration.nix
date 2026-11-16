@@ -206,6 +206,7 @@ programs.nix-ld.enable = true;
     fuse
     gedit
     git
+    gnome-extension-manager
     google-chrome
     htop
     ibus
